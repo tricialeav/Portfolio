@@ -1,0 +1,7 @@
+.reds {
+	width: 90vw;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-60deg, rgb(215, 89, 51), #E73C7E);
+    background-size: 100% 100%;
+}

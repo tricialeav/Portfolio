@@ -1,0 +1,7 @@
+.greens {
+	width: 90vw;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-60deg, rgb(4, 101, 75), rgb(6, 176, 179));
+	background-size: 100% 100%;
+}

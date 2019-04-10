@@ -1,0 +1,16 @@
+.navigation {
+    display: grid; 
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.16);
+    height: 5vh;
+    width: 100vw;
+    border-bottom: 2px solid white;
+}
+
+.navigationLink {
+    color: white;
+    text-decoration: none;
+    padding: 15px; 
+    position: relative;
+}
