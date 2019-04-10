@@ -1,11 +1,8 @@
-.about, .portfolio {
-  display: grid; 
-  grid-template-rows: auto auto;
+.divTitle {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    margin: 0 0 50px 0;
 }
-
-.row {
-  display: grid; 
-  grid-template-columns: 15% auto;
-}
-
 
