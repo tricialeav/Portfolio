@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../navigation/navigation'
-import './portfolio.css'
+import './portfolio.scss'
 
 export default class Portfolio extends Component {
     componentDidMount() {
@@ -12,10 +12,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <div className="portfolio">
-                <div className='row'>
-                    <Navigation />
-                    <div></div>
-                </div>
+            <Navigation />
             </div>
         );
     }

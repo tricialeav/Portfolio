@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../navigation/navigation'
-import './contact.css'
+import './contact.scss'
 
 export default class Contact extends Component {
     componentDidMount() {
