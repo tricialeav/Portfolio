@@ -1,5 +1,6 @@
 .landing {
-    height: 90vh;
+	height: 90vh;
+	width: 100%
 }
 
 .landingText {
@@ -8,7 +9,7 @@
     text-align: center;
     position: relative;
     width: 100%;
-    top: 40%;
+	top: 40%;
 }
 
 #buttonDiv {
@@ -39,7 +40,7 @@
 }
 
 .background-colors {
-	width: 90vw;
+	width: 100vw;
 	height: 100vh;
 	color: #fff;
 	background: linear-gradient(-60deg, rgb(215, 89, 51), #E73C7E, #23A6D5, rgb(23, 205, 162));
