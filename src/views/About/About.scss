@@ -1,19 +1,23 @@
 $white: rgb(255, 255, 255);
 $green: rgb(11, 121, 73);
 
-.reds {
-	color: #fff;
-    background: linear-gradient(60deg, rgb(5, 106, 42), rgb(32, 129, 247));
-    background-size: 400% 1000%;
-    -webkit-animation: Gradient 10s ease infinite;
-	-moz-animation: Gradient 10s ease infinite;
-	animation: Gradient 10s ease infinite;
-}
+// .reds {
+// 	color: #fff;
+//     background: linear-gradient(60deg, rgb(5, 106, 42), rgb(32, 129, 247));
+//     background-size: 400% 1000%;
+//     -webkit-animation: Gradient 10s ease infinite;
+// 	-moz-animation: Gradient 10s ease infinite;
+// 	animation: Gradient 10s ease infinite;
+// }
 
 .aboutGrid {
     align-content: center;
     width: 90vw;
     margin: 100px auto;
+
+    // #aboutMe {
+    //     background: $white;
+    // }
 
     .aboutColumns {
         margin: 50px auto;
@@ -21,18 +25,25 @@ $green: rgb(11, 121, 73);
         .aboutMeColumns {
             display: grid;
             text-align: center; 
+            background: $white;
+            padding: 20px;
+            // border: 2px solid rgb(8, 66, 255);
 
             #aboutText {
-                border: 2px solid $white;
+                color: black;
                 padding: 20px;
-                color: $white;
             }     
 
             #profilePhoto {
                 max-width: 200px;
                 margin: 20px auto;
                 border-radius: 50%;
-                border: 2px solid $white;
+                border: 1px solid rgb(13, 255, 239);
+                // box-shadow: 0 0 15px rgba(0,0,0,0.6);
+                // -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+                // -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+                // -o-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+                animation: shadow-pulse 1s infinite;
             }
         }
 
@@ -85,7 +96,7 @@ $green: rgb(11, 121, 73);
                     .flipCardBack {
                         transform: rotateY(180deg);
                         background: $white;
-                        color: $green;
+                        color: rgb(8, 66, 255);
                         align-content: center;
                     }
                 }
@@ -168,6 +179,16 @@ $green: rgb(11, 121, 73);
 	}
 }
 
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(13, 255, 239, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(13, 255, 239, 0);
+  }
+}
+
 
 @media screen and (min-width: 1400px) {
     .aboutMeColumns {
@@ -181,7 +202,7 @@ $green: rgb(11, 121, 73);
     }
 
     #profilePhoto {
-        max-width: 200px;
+        max-width: 300px;
         margin: auto auto;
     }
 

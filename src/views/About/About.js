@@ -38,18 +38,13 @@ export default class About extends Component {
             <div className="about" id='about'>
                 <Navigation />
                 <div className='aboutGrid'>
-                    <div className='aboutColumns'>
+                    <div className='aboutColumns' id='aboutMe'>
                         <h2 className='divTitle'>About Me</h2>
                         <div className='aboutMeColumns'>
                             <img src={placeholder} alt='placeholder' id='profilePhoto' />
                             <div id='aboutText'>
-                                <h4>Location:</h4> 
-                                <p>Newport Beach, CA</p>
-                                <h4>Education:</h4> 
-                                <p>Bachelor's Degree in Business Administration, University of Denver 2008<br/>Certificate of Completion in Web Development, University of California, Irvine 2018</p>
-                                <h4>Volunteer:</h4>
-                                <h4>Co-Organizer</h4>
-                                <p>Whiteboard Warriors Meetup Group</p>
+                                <p>I'm a Full Stack Web Developer located in Newport Beach, CA.</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>

@@ -33,9 +33,9 @@ export default class Landing extends Component {
     return (
       <div className="landing">
         <h1 className='landingText'>Hi, I'm Tricia</h1>
-        <h1 className='landingText'>and I'm a Web Developer</h1>
+        <h1 className='landingText'>and I'm a Full-Stack Web Developer</h1>
         <div id='buttonDiv'>
-          <a href='/about'><button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i></button></a>
+          <a href='#about'><button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i></button></a>
         </div>
       </div>
     );

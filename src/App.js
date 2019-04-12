@@ -7,11 +7,13 @@ import Portfolio from './components/portfolio/portfolio';
 import Contact from './components/contact/contact';
 
 
+// TODO enable scrolling animation
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route exact path='/' component={Landing}/>
           <Route path='/about' component={About}/>
@@ -20,7 +22,9 @@ class App extends Component {
         </Switch>
 
         
-      </Router>
+      </Router> */}
+      <Landing />
+      <About />
       </div>
     );
   }
