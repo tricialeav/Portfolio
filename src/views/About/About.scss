@@ -1,7 +1,7 @@
 $white: rgb(255, 255, 255);
 $green: rgb(11, 121, 73);
 
-// .reds {
+// .greens {
 // 	color: #fff;
 //     background: linear-gradient(60deg, rgb(5, 106, 42), rgb(32, 129, 247));
 //     background-size: 400% 1000%;
@@ -10,19 +10,28 @@ $green: rgb(11, 121, 73);
 // 	animation: Gradient 10s ease infinite;
 // }
 
+#about {
+    width: 100vw;
+    min-height: 100vh;
+}
+
 .aboutGrid {
     align-content: center;
     width: 90vw;
+    max-width: 2000px;
     margin: 100px auto;
+    
 
     .aboutColumns {
         margin: 50px auto;
+        max-width: 980px;
 
         .aboutMeColumns {
             display: grid;
             text-align: center; 
             background: $white;
             padding: 20px;
+            box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);	
 
             #aboutText {
                 color: rgb(60, 60, 60);
@@ -59,6 +68,7 @@ $green: rgb(11, 121, 73);
             text-align: center;
             margin: 0 auto;
             justify-items: center;
+            
         
             .flipCard {
                 background-color: transparent;
@@ -66,6 +76,7 @@ $green: rgb(11, 121, 73);
                 width: 120px; 
                 height: 100px;
                 margin-bottom: 20px;
+                
             
                 .flipCardInner {
                     position: relative;
@@ -85,6 +96,7 @@ $green: rgb(11, 121, 73);
                         border-radius: 4px;
                         width: 100%;
                         height: 100%; 
+                        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);	
                     }
 
                     .flipCardFront {

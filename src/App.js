@@ -27,6 +27,7 @@ class App extends Component {
       </Router> */}
       <Landing />
       <About />
+      <Portfolio />
       </div>
     );
   }
