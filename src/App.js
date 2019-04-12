@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './App.scss';
 import Landing from './views/Landing/Landing';
 import About from './views/About/About';

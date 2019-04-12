@@ -15,10 +15,6 @@ $green: rgb(11, 121, 73);
     width: 90vw;
     margin: 100px auto;
 
-    // #aboutMe {
-    //     background: $white;
-    // }
-
     .aboutColumns {
         margin: 50px auto;
 
@@ -27,11 +23,14 @@ $green: rgb(11, 121, 73);
             text-align: center; 
             background: $white;
             padding: 20px;
-            // border: 2px solid rgb(8, 66, 255);
 
             #aboutText {
-                color: black;
+                color: rgb(60, 60, 60);
                 padding: 20px;
+
+                .inlineLinks {
+                    color: #e85a09;
+                }
             }     
 
             #profilePhoto {
@@ -39,10 +38,6 @@ $green: rgb(11, 121, 73);
                 margin: 20px auto;
                 border-radius: 50%;
                 border: 1px solid rgb(13, 255, 239);
-                // box-shadow: 0 0 15px rgba(0,0,0,0.6);
-                // -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
-                // -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
-                // -o-box-shadow: 0 0 15px rgba(0,0,0,0.6);
                 animation: shadow-pulse 1s infinite;
             }
         }
@@ -96,7 +91,7 @@ $green: rgb(11, 121, 73);
                     .flipCardBack {
                         transform: rotateY(180deg);
                         background: $white;
-                        color: rgb(8, 66, 255);
+                        color: rgb(60, 60, 60);
                         align-content: center;
                     }
                 }

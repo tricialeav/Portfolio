@@ -1,24 +1,28 @@
 .navigation {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: auto;
-    text-align: center;
+    // display: grid; 
+    // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    // grid-template-rows: auto;
+    text-align: right;
     background: rgb(55, 49, 49);
-    height: 45px;
+    height: 70px;
     width: 100vw;
-    // border: 3px solid rgb(13, 255, 198);
     border-bottom: none;
     position: fixed;
     z-index: 10;
     top: 0;
     overflow: hidden;
+    align-items: center; 
+    a {
+        display: inline-block;
+        margin: auto 30px;
+    }
 }
 
 .navigation:after {
     content:"";
     background: -webkit-linear-gradient(left, rgb(13, 255, 239) 0%, rgb(19, 252, 198) 24%, rgb(19, 168, 213) 47%, rgb(8, 66, 255) 100%);
     display: block;
-    height:3px;
+    height: 3px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -27,8 +31,10 @@
 .navigationLink {
     text-decoration: none;
     padding: 15px; 
+    // margin-right: 20px;
     position: relative;
     color: rgb(255, 255, 255);
+    font-size: 40px;
 }
 
 .is-active {

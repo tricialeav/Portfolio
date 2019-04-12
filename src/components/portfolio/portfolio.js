@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <div className="portfolio">
-            <Navigation />
+                <h1>Portfolio</h1>
             </div>
         );
     }

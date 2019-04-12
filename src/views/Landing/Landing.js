@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import './Landing.scss';
 import About from '../About/About'
 
 export default class Landing extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   constructor(props) {
     super(props);
 
@@ -35,8 +39,18 @@ export default class Landing extends Component {
         <h1 className='landingText'>Hi, I'm Tricia</h1>
         <h1 className='landingText'>and I'm a Full-Stack Web Developer</h1>
         <div id='buttonDiv'>
-          <a href='#about'><button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i></button></a>
-        </div>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration= {500}
+          > 
+            <button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i>
+            </button>
+          </Link>
+          </div>
       </div>
     );
   }
