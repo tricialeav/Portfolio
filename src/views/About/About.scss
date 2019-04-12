@@ -1,8 +1,9 @@
-$border: rgb(255, 255, 255);
+$white: rgb(255, 255, 255);
+$green: rgb(11, 121, 73);
 
 .reds {
 	color: #fff;
-    background: linear-gradient(-60deg, rgb(26, 26, 202), #E73C7E);
+    background: linear-gradient(60deg, rgb(5, 106, 42), rgb(32, 129, 247));
     background-size: 400% 1000%;
     -webkit-animation: Gradient 10s ease infinite;
 	-moz-animation: Gradient 10s ease infinite;
@@ -10,106 +11,126 @@ $border: rgb(255, 255, 255);
 }
 
 .aboutGrid {
-    margin-top: 100px;
     align-content: center;
-}
+    width: 90vw;
+    margin: 100px auto;
 
-.aboutRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    width: 60vw;
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
-    justify-items: center;
-}
+    .aboutColumns {
+        margin: 50px auto;
 
-.flipCard {
-    background-color: transparent;
-    perspective: 1000px;
-    width: 150px; 
-    height: 150px;
-    margin-bottom: 20px;
-}
+        .aboutMeColumns {
+            display: grid;
+            text-align: center; 
 
-.flipCardInner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+            #aboutText {
+                border: 2px solid $white;
+                padding: 20px;
+                color: $white;
+            }     
+
+            #profilePhoto {
+                max-width: 200px;
+                margin: 20px auto;
+                border-radius: 50%;
+                border: 2px solid $white;
+            }
+        }
+
+        .cardRow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            width: 60vw;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            justify-items: center;
+        
+            .flipCard {
+                background-color: transparent;
+                perspective: 1000px;
+                width: 120px; 
+                height: 100px;
+                margin-bottom: 20px;
+            
+                .flipCardInner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                    
+                    .flipCardFront, .flipCardBack {
+                        backface-visibility: hidden;
+                        display: block;
+                        font-size: 1rem;
+                        padding-top: 20px;
+                        position: absolute;
+                        border: 2px solid $white;
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%; 
+                    }
+
+                    .flipCardFront {
+                        background-color: transparent; 
+
+                        .icon {
+                            font-size: 2rem;
+                        }
+                    }
+                
+                    .flipCardBack {
+                        transform: rotateY(180deg);
+                        background: $white;
+                        color: $green;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .flipCard:hover .flipCardInner {
     transform: rotateY(180deg);
   }
 
-  .flipCardFront, .flipCardBack {
-    backface-visibility: hidden;
-    display: block;
-    font-size: 1.5rem;
-    padding-top: 20px;
-    position: absolute;
-    border: 2px solid $border;
-    border-radius: 4px;
-    width: 100%;
-    height: 100%;
-    
-  }
-
-  .flipCardFront {
-      background-color: transparent; 
-  }
-
-.flipCardBack {
-    transform: rotateY(180deg);
-    background: rgb(255, 255, 255);
-    color: rgb(109, 3, 100);
-    align-content: center;
-}
-
-.icon {
-    font-size: 2rem;
-}
-
-#filterButtons {
-    display: grid;
-    width: 60vw; 
-    grid-template-rows: auto auto; 
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-column-gap: 20px;
-    margin: 0 auto 30px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+// #filterButtons {
+//     display: grid;
+//     width: 60vw;
+//     max-width: 400px; 
+//     grid-template-rows: auto auto; 
+//     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+//     grid-column-gap: 20px;
+//     margin: 0 auto 30px;
+//     align-items: center;
+//     align-content: center;
+//     justify-content: center;
 
 
-    .filterSkillButton {
-        display: inline-block;
-        padding: 15px 5px;
-        font-size: 15px;
-        font-weight: bold;
-        background: white;
-        color: rgb(56, 3, 109);
-        margin-bottom: 10px;
-    }
+//     .filterSkillButton {
+//         display: inline-block;
+//         padding: 15px 5px;
+//         font-size: 15px;
+//         font-weight: bold;
+//         background: $white;
+//         color: $green;
+//         margin-bottom: 10px;
+//         border-radius: 5%;
+//     }
 
-    .filterSkillButton:hover {
-        cursor: pointer;
-    }
+//     .filterSkillButton:hover {
+//         cursor: pointer;
+//     }
 
-    .filterSkillButton:focus {
-        background: rgb(56, 3, 109);
-        color: white;
-    }
-}
-
-.hideDiv {
-    display: none;
-}
+//     .filterSkillButton:focus {
+//         background: $green;
+//         color: $white;
+//     }
+// }
 
 @-webkit-keyframes Gradient {
 	0% {
@@ -145,4 +166,28 @@ $border: rgb(255, 255, 255);
 	100% {
 		background-position: 0% 50%
 	}
+}
+
+
+@media screen and (min-width: 1400px) {
+    .aboutMeColumns {
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+        align-items: center; 
+    }
+
+    #aboutText {
+        text-align: left;
+    }
+
+    #profilePhoto {
+        max-width: 200px;
+        margin: auto auto;
+    }
+
+    .aboutGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 50px;
+    }
 }
