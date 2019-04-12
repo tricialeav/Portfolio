@@ -31,7 +31,14 @@ $green: rgb(11, 121, 73);
                 .inlineLinks {
                     color: #e85a09;
                 }
-            }     
+            }   
+            
+            #headline {
+                color: black; 
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center; 
+            }
 
             #profilePhoto {
                 max-width: 200px;

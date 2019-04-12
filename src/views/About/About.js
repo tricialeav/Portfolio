@@ -43,11 +43,11 @@ export default class About extends Component {
                         <div className='aboutMeColumns'>
                             <img src={placeholder} alt='placeholder' id='profilePhoto' />
                             <div id='aboutText'>
-                                <p>I'm a Full Stack Web Developer located in Newport Beach, CA.</p>
-                                <p>I spent the first ten years of my career in the business world, where I developed mastery in interpersonal communication, relationship building, and leadership.</p>
+                                <p id='headline'>I'm a Full Stack Web Developer located in Newport Beach, CA who is passionate about front-end development.</p>
+                                <p>I spent the first ten years of my career in the business world, where I sharpened my interpersonal communication, relationship building, and leadership skills.</p>
                                 <p>In late 2017, after having pursued front-end development as a hobby, I enrolled in University of California, Irvine Division of Continuing Education's Full-Stack Web Development Bootcamp. Since completing the program, I have worked as a Software Developer as well as a Freelancer.</p>
-                                <p>I am also the Cofounder of <a href='https://www.meetup.com/Whiteboard-Warriors/' className='inlineLinks'>Whiteboard Warriors Meetup Group</a>, located in Irvine, CA. Our purpose is to provide hands-on technical interview practice to developers of all skill levels in a fun and collaborative environment.</p>
-                                <p>In my free time, you will find me gardening, working on personal development projects, promoting the Meetup Group, and enjoying beautiful Southern California.</p>
+                                <p>I am also the Cofounder of <a href='https://www.meetup.com/Whiteboard-Warriors/' className='inlineLinks' target='_blank'>Whiteboard Warriors Meetup Group</a>, located in Irvine, CA. Our purpose is to provide hands-on technical interview practice to developers of all skill levels in a fun and collaborative environment.</p>
+                                <p>In my free time, you will find me gardening, working on personal development projects, promoting the Meetup Group, taking pictures, and enjoying beautiful Southern California.</p>
                             </div>
                         </div>
                     </div>

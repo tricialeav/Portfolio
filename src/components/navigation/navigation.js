@@ -34,7 +34,8 @@ export default class Navigation extends Component {
                     duration= {500}
                 >About</Link>
                 <a href='https://www.linkedin.com/in/tricia-leavitt/' target='_blank'><i className="fab fa-linkedin navigationLink"></i></a>
-                <a href='https://github.com/tricialeav' target='_blank'><i className="fab fa-github-square navigationLink"></i></a>                
+                <a href='https://github.com/tricialeav' target='_blank'><i className="fab fa-github-square navigationLink"></i></a>
+                <a href='https://www.instagram.com/tricialeav/' target='_blank'><i class="fab fa-instagram navigationLink"></i></a>               
                 <a href="mailto:tricialeavittdevelopment@gmail.com?subject=Website Inquiry"><i className="far fa-envelope navigationLink"></i></a>
             </div>
         );

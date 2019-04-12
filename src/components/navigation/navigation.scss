@@ -6,6 +6,7 @@
     background: rgb(55, 49, 49);
     height: 70px;
     width: 100vw;
+    max-width: 2000px;
     border-bottom: none;
     position: fixed;
     z-index: 10;
@@ -14,7 +15,7 @@
     align-items: center; 
     a {
         display: inline-block;
-        margin: auto 30px;
+        margin: auto 15px;
     }
 }
 
@@ -31,7 +32,6 @@
 .navigationLink {
     text-decoration: none;
     padding: 15px; 
-    // margin-right: 20px;
     position: relative;
     color: rgb(255, 255, 255);
     font-size: 40px;

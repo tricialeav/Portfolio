@@ -24,13 +24,19 @@ export const skills = [
         type: 'CSS'
     },
     {
+        icon: "fas fa-code icon",
+        skill: "Materialize", 
+        years: '< 1 year', 
+        type: 'CSS'
+    },
+    {
         icon: "fab fa-js-square icon", 
         skill: "JavaScript", 
         years: '1.5 years', 
         type: 'JavaScript'
     }, 
     {
-        icon: "fas fa-code icon", 
+        icon: "fas fa-dollar-sign icon", 
         skill: "jQuery", 
         years: '1 year', 
         type: 'JavaScript'
@@ -60,7 +66,7 @@ export const skills = [
         type: 'Database'
     }, 
     {
-        icon: "fas fa-database icon", 
+        icon: "fas fa-leaf icon", 
         skill: 'MongoDB', 
         years: '< 1 year', 
         type: 'Database'
