@@ -1,20 +1,36 @@
 .navigation {
     display: grid; 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: auto;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: rgb(55, 49, 49);
     height: 45px;
     width: 100vw;
-    border-bottom: 3px solid #23A6D5;
+    // border: 3px solid rgb(13, 255, 198);
+    border-bottom: none;
     position: fixed;
+    z-index: 10;
     top: 0;
     overflow: hidden;
+}
+
+.navigation:after {
+    content:"";
+    background: -webkit-linear-gradient(left, rgb(13, 255, 239) 0%, rgb(19, 252, 198) 24%, rgb(19, 168, 213) 47%, rgb(8, 66, 255) 100%);
+    display: block;
+    height:3px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .navigationLink {
     text-decoration: none;
     padding: 15px; 
     position: relative;
-    color: rgb(57, 56, 56);
+    color: rgb(255, 255, 255);
+}
+
+.is-active {
+    color: rgb(0, 251, 255);
 }

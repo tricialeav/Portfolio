@@ -1,11 +1,10 @@
 $border: rgb(255, 255, 255);
 
 .reds {
-	width: 100vw;
-	height: 100%;
 	color: #fff;
 	background: linear-gradient(-60deg, rgb(215, 89, 51), #E73C7E);
-    background-size: 100% 100%;
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
 }
 
 .aboutGrid {
@@ -26,15 +25,48 @@ $border: rgb(255, 255, 255);
     justify-content: center;
 }
 
-.aboutCard {
-    display: block;
-    color: white;
-    font-size: 1.5rem;
+.flipCard {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 150px; 
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    border: 2px solid white;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+
+  .flipCardFront, .flipCardBack {
+    backface-visibility: hidden;
+    display: block;
+    font-size: 1.5rem;
     padding-top: 20px;
-    border-color: $border;
+    position: absolute;
+    border: 2px solid $border;
     border-radius: 4px;
+    width: 100%;
+  height: 100%;
+    
+  }
+
+  .flipCardFront {
+      background-color: transparent; 
+  }
+
+.flipCardBack {
+    transform: rotateY(180deg);
+    background: rgb(255, 255, 255);
+    color: rgb(109, 3, 100);
 }
 
 .icon {
