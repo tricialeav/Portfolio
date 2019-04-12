@@ -6,6 +6,15 @@ import { skills } from '../../data/skills.js'
 // TODO add scroll feature
 
 export default class About extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            type: 'all'
+        }
+
+        this.filterSkills = this.filterSkills.bind(this);
+    }
 
     componentDidMount() {
         document.body.classList.add("reds");
@@ -14,6 +23,13 @@ export default class About extends Component {
         document.body.classList.remove("reds");
     }
 
+    filterSkills = (e) => {
+        e.preventDefault();
+        this.setState({
+            type: e.target.name
+        })
+        console.log(e.target.name)
+    }
 
     render() {
 
@@ -22,23 +38,36 @@ export default class About extends Component {
                 <Navigation />
                 <div className='aboutGrid'>
                     <h2 className='divTitle'>Skills</h2>
+                    <div id='filterButtons'>
+                        <button onClick={e => this.filterSkills(e)} name='all' className='filterSkillButton' >All</button>
+                        <button onClick={e => this.filterSkills(e)} name='HTML' className='filterSkillButton'>HTML</button>
+                        <button onClick={e => this.filterSkills(e)} name='CSS' className='filterSkillButton'>CSS</button>
+                        <button onClick={e => this.filterSkills(e)} name='JavaScript' className='filterSkillButton'>Javascript</button>
+                        <button onClick={e => this.filterSkills(e)} name='Database' className='filterSkillButton'>Database</button>
+                        <button onClick={e => this.filterSkills(e)} name='PHP' className='filterSkillButton'>PHP</button>
+                        <button onClick={e => this.filterSkills(e)} name='Other' className='filterSkillButton'>Other</button>
+                    </div>
                     <div className='aboutRow'>
-                        {skills.map(({ icon, skill, years, i }) => {
-                            return (
-                                <div className='flipCard'>
-                                    <div className='flipCardInner'>
-                                        <div key={i}>
-                                            <div className='flipCardFront'>
-                                                <i className={icon} key={i}></i>
-                                                <h5 key={i}>{skill}</h5>
+                        {skills.map(({ icon, skill, years, type }) =>
+                            (
+                                type === this.state.type || this.state.type === "all" ? (
+                                    <div className='flipCard' value={type} key={skill}>
+                                        <div className='flipCardInner' >
+                                            <div >
+                                                <div className='flipCardFront' >
+                                                    <i className={icon} ></i>
+                                                    <h5>{skill}</h5>
+                                                </div>
+                                                <div className='flipCardBack'>
+                                                    <h5>{years}</h5>
+                                                </div>
                                             </div>
-                                            <div class='flipCardBack'>{years}</div>
                                         </div>
-                                    </div>
-                                </div>
-                            );
-                        })}
-
+                                    </div>) : (
+                                        null
+                                    )
+                            )
+                        )}
                     </div>
                 </div>
             </div>

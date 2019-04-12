@@ -1,67 +1,99 @@
 export const skills = [
     {
         icon: "fab fa-html5 icon",
-        skill: "HTML"
+        skill: "HTML", 
+        years: '2 years', 
+        type: 'HTML'
     },
     {
         icon: "fab fa-css3-alt icon",
-        skill: "CSS"
+        skill: "CSS", 
+        years: '2 years', 
+        type: 'CSS'
     },
     {
         icon: "fab fa-sass icon",
-        skill: "SASS"
+        skill: "SASS", 
+        years: '< 1 year', 
+        type: 'CSS'
     },
     {
         icon: "fab fa-bootstrap icon",
-        skill: "Bootstrap"
+        skill: "Bootstrap", 
+        years: '1 year', 
+        type: 'CSS'
     },
     {
         icon: "fab fa-js-square icon", 
-        skill: "JavaScript"
+        skill: "JavaScript", 
+        years: '1.5 years', 
+        type: 'JavaScript'
     }, 
     {
         icon: "fas fa-code icon", 
-        skill: "jQuery"
+        skill: "jQuery", 
+        years: '1 year', 
+        type: 'JavaScript'
     }, 
     {
         icon: "fab fa-react icon", 
-        skill: "React"
+        skill: "React", 
+        years: '1 year', 
+        type: 'JavaScript'
     }, 
     {
         icon: "fab fa-vuejs icon", 
-        skill: "Vue.js"
+        skill: "Vue.js", 
+        years: '< 1 year', 
+        type: 'JavaScript'
     }, 
     {
         icon: "fab fa-node-js icon", 
-        skill: 'Node.js'
+        skill: 'Node.js', 
+        years: '1 year', 
+        type: 'JavaScript'
     }, 
     {
         icon: "fas fa-database icon", 
-        skill: 'MySQL'
+        skill: 'MySQL', 
+        years: '1 year', 
+        type: 'Database'
     }, 
     {
         icon: "fas fa-database icon", 
-        skill: 'MongoDB'
+        skill: 'MongoDB', 
+        years: '< 1 year', 
+        type: 'Database'
     }, 
     {
         icon: "fab fa-php icon", 
-        skill: 'PHP'
+        skill: 'PHP', 
+        years: '< 1 year', 
+        type: 'PHP'
     }, 
     {
         icon: "fab fa-laravel icon", 
-        skill: 'Laravel'
+        skill: 'Laravel', 
+        years: '< 1 year', 
+        type: 'PHP'
     }, 
     {
         icon: "fab fa-github-square icon", 
-        skill: 'GitHub'
+        skill: 'GitHub', 
+        years: '1 year', 
+        type: 'Other'
     }, 
     {
         icon: "fab fa-jira icon", 
-        skill: 'Jira'
+        skill: 'Jira', 
+        years: '< 1 year', 
+        type: 'Other'
     }, 
     {
         icon: "fab fa-adobe icon", 
-        skill: 'PhotoShop'
+        skill: 'PhotoShop', 
+        years: '1 year',
+        type: 'Other'
     }
 ]
 

@@ -2,9 +2,11 @@ $border: rgb(255, 255, 255);
 
 .reds {
 	color: #fff;
-	background: linear-gradient(-60deg, rgb(215, 89, 51), #E73C7E);
-    background-size: 100% 200%;
-    background-repeat: no-repeat;
+    background: linear-gradient(-60deg, rgb(26, 26, 202), #E73C7E);
+    background-size: 400% 1000%;
+    -webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
 }
 
 .aboutGrid {
@@ -20,9 +22,8 @@ $border: rgb(255, 255, 255);
     width: 60vw;
     max-width: 800px;
     text-align: center;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 .flipCard {
@@ -55,7 +56,7 @@ $border: rgb(255, 255, 255);
     border: 2px solid $border;
     border-radius: 4px;
     width: 100%;
-  height: 100%;
+    height: 100%;
     
   }
 
@@ -67,8 +68,81 @@ $border: rgb(255, 255, 255);
     transform: rotateY(180deg);
     background: rgb(255, 255, 255);
     color: rgb(109, 3, 100);
+    align-content: center;
 }
 
 .icon {
     font-size: 2rem;
+}
+
+#filterButtons {
+    display: grid;
+    width: 60vw; 
+    grid-template-rows: auto auto; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 20px;
+    margin: 0 auto 30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+    .filterSkillButton {
+        display: inline-block;
+        padding: 15px 5px;
+        font-size: 15px;
+        font-weight: bold;
+        background: white;
+        color: rgb(56, 3, 109);
+        margin-bottom: 10px;
+    }
+
+    .filterSkillButton:hover {
+        cursor: pointer;
+    }
+
+    .filterSkillButton:focus {
+        background: rgb(56, 3, 109);
+        color: white;
+    }
+}
+
+.hideDiv {
+    display: none;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
