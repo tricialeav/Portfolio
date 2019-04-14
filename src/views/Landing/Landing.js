@@ -44,7 +44,7 @@ export default class Landing extends Component {
             to="about"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={0}
             duration= {500}
           > 
             <button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i>

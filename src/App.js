@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// import * as Scroll from 'react-scroll';
 import './App.scss';
+import Navigation from './components/navigation/navigation'
+import Navigation2 from './components/navigation2/navigation2'
 import Landing from './views/Landing/Landing';
 import About from './views/About/About';
 import Portfolio from './components/portfolio/portfolio';
-import Contact from './components/contact/contact';
+// import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 
 // TODO enable scrolling animation
@@ -15,19 +17,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      {/* <Router>
-        <Switch>
-          <Route exact path='/' component={Landing}/>
-          <Route path='/about' component={About}/>
-          <Route path='/portfolio' component={Portfolio}/>
-          <Route path='/contact' component={Contact}/>
-        </Switch>
-
-        
-      </Router> */}
-      <Landing />
-      <About />
-      <Portfolio />
+      <Navigation2 />
+      {/* <Navigation /> */}
+        <Landing />
+        <About />
+        <Portfolio />
+        <Footer />
       </div>
     );
   }

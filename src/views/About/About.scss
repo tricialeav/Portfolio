@@ -1,37 +1,32 @@
 $white: rgb(255, 255, 255);
 $green: rgb(11, 121, 73);
 
-// .greens {
-// 	color: #fff;
-//     background: linear-gradient(60deg, rgb(5, 106, 42), rgb(32, 129, 247));
-//     background-size: 400% 1000%;
-//     -webkit-animation: Gradient 10s ease infinite;
-// 	-moz-animation: Gradient 10s ease infinite;
-// 	animation: Gradient 10s ease infinite;
-// }
-
 #about {
-    width: 100vw;
+    width: 101vw;
     min-height: 100vh;
 }
 
 .aboutGrid {
+    display: grid;
     align-content: center;
     width: 90vw;
     max-width: 2000px;
-    margin: 100px auto;
-    
+    margin-top: 100px;
+    margin-bottom: -100px; 
+    margin-left: auto; 
+    margin-right: auto;
 
     .aboutColumns {
         margin: 50px auto;
-        max-width: 980px;
-
+        max-width: 1000px;
+        
         .aboutMeColumns {
-            display: grid;
+            // display: grid;
             text-align: center; 
-            background: $white;
+            background: rgb(255, 255, 255);
             padding: 20px;
             box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);	
+            margin: 20px auto;
 
             #aboutText {
                 color: rgb(60, 60, 60);
@@ -50,8 +45,9 @@ $green: rgb(11, 121, 73);
             }
 
             #profilePhoto {
-                max-width: 200px;
-                margin: 20px auto;
+                display: block;
+                max-width: 150px;
+                margin: 10px auto;
                 border-radius: 50%;
                 border: 1px solid rgb(13, 255, 239);
                 animation: shadow-pulse 1s infinite;
@@ -60,22 +56,22 @@ $green: rgb(11, 121, 73);
 
         .cardRow {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             grid-row-gap: 20px;
-            grid-column-gap: 20px;
-            width: 60vw;
-            max-width: 600px;
+            grid-column-gap: 10px;
+            width: 80vw;
+            max-width: 500px;
             text-align: center;
-            margin: 0 auto;
             justify-items: center;
+            margin: 20px auto;
             
         
             .flipCard {
                 background-color: transparent;
                 perspective: 1000px;
-                width: 120px; 
+                width: 100px; 
                 height: 100px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 
             
                 .flipCardInner {
@@ -89,7 +85,7 @@ $green: rgb(11, 121, 73);
                     .flipCardFront, .flipCardBack {
                         backface-visibility: hidden;
                         display: block;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         padding-top: 20px;
                         position: absolute;
                         border: 2px solid $white;
@@ -196,7 +192,7 @@ $green: rgb(11, 121, 73);
 @keyframes shadow-pulse
 {
   0% {
-    box-shadow: 0 0 0 0px rgba(13, 255, 239, 0.5);
+    box-shadow: 0 0 0 0px rgba(13, 255, 239, 0.804);
   }
   100% {
     box-shadow: 0 0 0 15px rgba(13, 255, 239, 0);
@@ -205,11 +201,6 @@ $green: rgb(11, 121, 73);
 
 
 @media screen and (min-width: 1400px) {
-    .aboutMeColumns {
-        grid-template-columns: auto auto;
-        grid-column-gap: 30px;
-        align-items: center; 
-    }
 
     #aboutText {
         text-align: left;
@@ -221,8 +212,22 @@ $green: rgb(11, 121, 73);
     }
 
     .aboutGrid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 50px;
+        grid-template-columns: 55% 40%;
+        grid-column-gap: 30px;
+
+        .aboutColumns {
+
+            .cardRow {
+                width: 40vw;
+            }
+        }
+
+        .aboutMeColumns {
+            grid-template-columns: auto auto;
+            grid-column-gap: 30px;
+            align-items: center; 
+        }
+
     }
+
 }

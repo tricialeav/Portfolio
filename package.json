@@ -10,7 +10,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "react-scroll": "^1.7.11",
-    "react-transition-group": "^2.9.0"
+    "react-transition-group": "1.x"
   },
   "scripts": {
     "start": "react-scripts start",
