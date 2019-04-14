@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
 // import * as Scroll from 'react-scroll';
 import './App.scss';
-import Navigation from './components/navigation/navigation'
 import Navigation2 from './components/navigation2/navigation2'
 import Landing from './views/Landing/Landing';
 import About from './views/About/About';

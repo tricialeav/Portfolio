@@ -1,3 +1,30 @@
+.nav {
+    background-color: rgb(255, 255, 255);
+    min-height: 110vh; 
+    position: fixed; 
+    top: 0;
+    z-index: 1;
+    text-align: right;
+    width: 40px;
+    border-right: 2px solid rgb(72, 72, 72);
+
+    .collapsibleNav {
+        position: relative; 
+        top: 50vh;
+        left: 21px;
+
+        i.fas.fa-bars {
+            display: block;
+            color: rgb(72, 72, 72);
+            font-size: 2em;
+        }
+
+        i.fas.fa-bars:hover {
+            cursor: pointer;
+        }
+    }
+}
+
 .closeNav {
     background-color: rgb(255, 255, 255);
     min-height: 110vh; 
@@ -63,14 +90,23 @@
         align-content: center;
         text-align: center;
         color: rgb(72, 72, 72);
-        font-size: 4vw;
+        font-size: 2.5vw;
         animation: fade-in 2s ease;
         position: relative; 
         top: 15vh;
-        i, .links, .active {
+        margin-bottom: 20px;
+        i, .links, a {
             color: rgb(72, 72, 72);
-            font-size: 4vw;
+            font-size: 2.5vw;
             margin-bottom: 20px;
+        }
+
+        .active {
+            color: rgb(186, 35, 210);
+        }
+
+        small {
+            font-size: .75vw;
         }
     }
 
