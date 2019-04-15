@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import './Landing.scss';
-import About from '../About/About'
+// import About from '../About/About'
 
 export default class Landing extends Component {
   scrollToTop = () => {
@@ -17,9 +17,9 @@ export default class Landing extends Component {
     this.increaseSize = this.increaseSize.bind(this);
   }
 
-  componentDidMount() {
-    document.body.classList.add("background-colors");
-  }
+  // componentDidMount() {
+  //   document.body.classList.add("background-colors");
+  // }
 
   increaseSize = () => {
     this.setState ({
@@ -44,7 +44,7 @@ export default class Landing extends Component {
             to="about"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-20}
             duration= {500}
           > 
             <button id='learnMoreButton' onMouseEnter={this.increaseSize} onMouseLeave={this.decreaseSize}>About &nbsp;&nbsp;<i className={this.state.increaseSize ? 'fas fa-arrow-right increaseSize' : 'fas fa-arrow-right'}></i>

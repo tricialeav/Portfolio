@@ -2,8 +2,12 @@ $white: rgb(255, 255, 255);
 $green: rgb(11, 121, 73);
 
 #about {
-    width: 101vw;
-    min-height: 100vh;
+    min-height: 90vh;
+	width: 90vw;
+    background: linear-gradient(90deg, white 50%, #E73C7E 50%);
+    color: white; 
+    margin: auto auto;
+    top: 30px;
 }
 
 .aboutGrid {
@@ -11,45 +15,44 @@ $green: rgb(11, 121, 73);
     align-content: center;
     width: 90vw;
     max-width: 2000px;
-    margin-top: 100px;
-    margin-bottom: -100px; 
+    margin-top: 100px; 
+    margin-bottom: 100px;
     margin-left: auto; 
     margin-right: auto;
 
     .aboutColumns {
-        margin: 50px auto;
+        margin: auto auto;
         max-width: 1000px;
+        justify-items: center;
+        align-items: center;
         
         .aboutMeColumns {
-            // display: grid;
             text-align: center; 
-            background: rgb(255, 255, 255);
             padding: 20px;
-            box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);	
             margin: 20px auto;
 
             #aboutText {
-                color: rgb(60, 60, 60);
+                color: rgb(0, 0, 0);
                 padding: 20px;
 
                 .inlineLinks {
-                    color: #e85a09;
+                    color: #E73C7E;
                 }
             }   
             
             #headline {
-                color: black; 
+                color: #E73C7E; 
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 2vw;
                 text-align: center; 
             }
 
             #profilePhoto {
                 display: block;
-                max-width: 150px;
+                max-width: 200px;
                 margin: 10px auto;
                 border-radius: 50%;
-                border: 1px solid rgb(13, 255, 239);
+                border: 2px solid rgb(13, 255, 239);
                 animation: shadow-pulse 1s infinite;
             }
         }
@@ -62,15 +65,13 @@ $green: rgb(11, 121, 73);
             width: 80vw;
             max-width: 500px;
             text-align: center;
-            justify-items: center;
-            margin: 20px auto;
-            
+            margin: auto;
         
             .flipCard {
                 background-color: transparent;
                 perspective: 1000px;
                 width: 100px; 
-                height: 100px;
+                height: 80px;
                 margin-bottom: 10px;
                 
             
@@ -113,6 +114,16 @@ $green: rgb(11, 121, 73);
             }
         }
     }
+}
+
+i.fas.fa-arrow-down {
+    color: black;
+    position: relative;
+    display: block;
+    right: 10px;
+    z-index: 10;
+    animation: point-down 2s ease infinite;
+    font-size: 30px;
 }
 
 .flipCard:hover .flipCardInner {
@@ -199,8 +210,18 @@ $green: rgb(11, 121, 73);
   }
 }
 
+@keyframes point-down
+{
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: -100px;
+  }
+}
 
-@media screen and (min-width: 1400px) {
+
+@media screen and (min-width: 900px) {
 
     #aboutText {
         text-align: left;
@@ -212,7 +233,7 @@ $green: rgb(11, 121, 73);
     }
 
     .aboutGrid {
-        grid-template-columns: 55% 40%;
+        grid-template-columns: 50% 50%;
         grid-column-gap: 30px;
 
         .aboutColumns {

@@ -20,12 +20,12 @@ export default class Portfolio extends Component {
         // this.resetBlur = this.resetBlur.bind(this)
     // }
 
-    componentDidMount() {
-        document.body.classList.add("blues");
-    }
-    componentWillUnmount() {
-        document.body.classList.remove("blues");
-    }
+    // componentDidMount() {
+    //     document.body.classList.add("blues");
+    // }
+    // componentWillUnmount() {
+    //     document.body.classList.remove("blues");
+    // }
 
     // blurOthers = (e) => {
     //     console.log(e.target.value)
@@ -45,9 +45,9 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <div className="portfolio" style={{background: 'linear-gradient(-60deg, #23A6D5, rgb(23, 205, 162))', backgroundSize: '200% 200%'}}>
+            <div className="portfolio">
                 <div id='portfolioContainer'>
-                <h1>PORTFOLIO</h1>
+                {/* <h1>PORTFOLIO</h1> */}
                     <ul id='portfolioList'>
                         <li className='portfolioCard' value='UCI'>
                             <img src={microphone} alt='Microphone on stand' className='portfolioGraphics'></img>

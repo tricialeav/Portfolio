@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-// import { CSSTransitionGroup } from 'react-transition-group'
 import './navigation2.scss'
-// import { Link, animateScroll as scroll } from "react-scroll";
-// import './navigation.scss'
 
 // TODO update navigation for scroll function
 
@@ -16,7 +13,6 @@ export default class Navigation2 extends Component {
         }
 
         this.toggleNav = this.toggleNav.bind(this)
-        // this.renderNav = this.renderNav.bind(this)
     }
 
     scrollToTop = () => {
@@ -25,32 +21,17 @@ export default class Navigation2 extends Component {
 
     toggleNav = (e) => {
         e.preventDefault();
-        console.log('click')
         if (this.state.navType === 'nav' || this.state.navType === 'closeNav') {
             this.setState({
-                // clossedOnOpen: false,
                 navType: 'openNav'
             })
         } else if (this.state.navType === 'openNav') {
             this.setState({
-                // clossedOnOpen: false,
                 navType: 'closeNav'
             })
         }
 
     }
-
-    // renderNav = () => {
-    //     if (this.state.closedOnOpen) {
-    //         return 'nav'
-    //     } 
-    //     else if (!this.state.closedOnOpen && !this.state.openNav) {
-    //         return 'closeNav'
-    //     }
-    //     else if (!this.state.closedOnOpen && this.state.openNav) {
-    //         return 'openNav'
-    //     }
-    // }
 
     render() {
         return (
@@ -66,7 +47,7 @@ export default class Navigation2 extends Component {
                                 to="landing"
                                 spy={true}
                                 smooth={true}
-                                offset={-1}
+                                offset={-40}
                                 duration={700}
                                 onClick={e => this.toggleNav(e)}>Home</Link>
                             <Link
@@ -74,7 +55,7 @@ export default class Navigation2 extends Component {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={-1}
+                                offset={-20}
                                 duration={700}
                                 onClick={e => this.toggleNav(e)}>About</Link>
                             <Link
