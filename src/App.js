@@ -5,7 +5,7 @@ import './App.scss';
 import Navigation2 from './components/navigation2/navigation2'
 import Landing from './views/Landing/Landing';
 import About from './views/About/About';
-import Portfolio from './components/portfolio/portfolio';
+import Portfolio from './views/portfolio/portfolio';
 // import Contact from './components/contact/contact';
 // import Footer from './components/footer/footer';
 
@@ -17,7 +17,6 @@ class App extends Component {
     return (
       <div className="App">
       <Navigation2 />
-      {/* <Navigation /> */}
         <Landing />
         <About />
         <Portfolio />

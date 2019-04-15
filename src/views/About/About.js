@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './About.scss';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { skills } from '../../data/skills.js'
 import placeholder from '../../media/placeholder.jpg'
 
@@ -9,7 +9,7 @@ export default class About extends Component {
         super(props);
 
         this.state = {
-            type: 'all', 
+            type: 'all',
             animation: ''
         }
 
@@ -26,7 +26,7 @@ export default class About extends Component {
     }
 
     moveArrow = (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         this.setState({
             animation: 'point-down 2s ease 1'
         })
@@ -42,6 +42,7 @@ export default class About extends Component {
                             <img src={placeholder} alt='placeholder' id='profilePhoto' />
                             <div id='aboutText'>
                                 <p id='headline'>I'm a Full Stack Web Developer located in Newport Beach, CA and I'm passionate about front-end development.</p>
+                                <hr />
                                 <p>I spent the first ten years of my career in the business world, where I sharpened my interpersonal communication, relationship building, and leadership skills.</p>
                                 <p>After transitioning my career in early 2018, I have worked as a Software Developer and Freelancer.</p>
                                 <p>I am also the Cofounder of <a href='https://www.meetup.com/Whiteboard-Warriors/' className='inlineLinks' target='_blank'>Whiteboard Warriors Meetup Group</a>, located in Irvine, CA. Our purpose is to provide hands-on technical interview practice to developers of all skill levels in a fun and collaborative environment.</p>
@@ -50,16 +51,6 @@ export default class About extends Component {
                         </div>
                     </div>
                     <div className='aboutColumns'>
-                        {/* <h3 className='divTitle'>Skills</h3> */}
-                        {/* <div id='filterButtons'>
-                        <button onClick={e => this.filterSkills(e)} name='all' className='filterSkillButton' >All</button>
-                        <button onClick={e => this.filterSkills(e)} name='HTML' className='filterSkillButton'>HTML</button>
-                        <button onClick={e => this.filterSkills(e)} name='CSS' className='filterSkillButton'>CSS</button>
-                        <button onClick={e => this.filterSkills(e)} name='JavaScript' className='filterSkillButton'>Javascript</button>
-                        <button onClick={e => this.filterSkills(e)} name='Database' className='filterSkillButton'>Database</button>
-                        <button onClick={e => this.filterSkills(e)} name='PHP' className='filterSkillButton'>PHP</button>
-                        <button onClick={e => this.filterSkills(e)} name='Other' className='filterSkillButton'>Other</button>
-                    </div> */}
                         <h1>Skills <small>(hover)</small></h1>
                         <div className='cardRow'>
                             {skills.map(({ icon, skill, years, type }) =>
@@ -93,9 +84,16 @@ export default class About extends Component {
                     offset={-30}
                     duration={500}
                 >
+                    <span class='vertical'>
+                        <span>S</span>
+                        <span>c</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>l</span>
+                        <span>l</span>
+                    </span>
                     <i class="fas fa-arrow-down"></i>
                 </Link>
-
             </div>
         );
     }
