@@ -3,9 +3,9 @@ $green: rgb(11, 121, 73);
 
 #about {
     min-height: 90vh;
-	width: 90vw;
-    background: linear-gradient(90deg, white 50%, #E73C7E 50%);
-    color: white; 
+	width: 80vw;
+    background: white;
+    color: black; 
     margin: auto auto;
     top: 30px;
 }
@@ -13,18 +13,24 @@ $green: rgb(11, 121, 73);
 .aboutGrid {
     display: grid;
     align-content: center;
-    width: 90vw;
+    width: 80vw;
     max-width: 2000px;
     margin-top: 100px; 
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     margin-left: auto; 
     margin-right: auto;
 
     .aboutColumns {
+        display: grid;
         margin: auto auto;
         max-width: 1000px;
         justify-items: center;
         align-items: center;
+
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+            text-align: center;
+        }
         
         .aboutMeColumns {
             text-align: center; 
@@ -34,6 +40,7 @@ $green: rgb(11, 121, 73);
             #aboutText {
                 color: rgb(0, 0, 0);
                 padding: 20px;
+                
 
                 .inlineLinks {
                     color: #E73C7E;
@@ -45,11 +52,12 @@ $green: rgb(11, 121, 73);
                 font-weight: bold;
                 font-size: 2vw;
                 text-align: center; 
+                font-family: 'Permanent Marker', cursive;
             }
 
             #profilePhoto {
                 display: block;
-                max-width: 200px;
+                max-width: 300px;
                 margin: 10px auto;
                 border-radius: 50%;
                 border: 2px solid rgb(13, 255, 239);
@@ -63,7 +71,7 @@ $green: rgb(11, 121, 73);
             grid-row-gap: 20px;
             grid-column-gap: 10px;
             width: 80vw;
-            max-width: 500px;
+            max-width: 450px;
             text-align: center;
             margin: auto;
         
@@ -71,7 +79,7 @@ $green: rgb(11, 121, 73);
                 background-color: transparent;
                 perspective: 1000px;
                 width: 100px; 
-                height: 80px;
+                height: 100px;
                 margin-bottom: 10px;
                 
             
@@ -119,50 +127,21 @@ $green: rgb(11, 121, 73);
 i.fas.fa-arrow-down {
     color: black;
     position: relative;
-    display: block;
+    // display: block;
     right: 10px;
-    z-index: 10;
-    animation: point-down 2s ease infinite;
     font-size: 30px;
+    top: -3vh;
+}
+
+i.fas.fa-arrow-down:hover {
+    cursor: pointer;
+    animation: pulse 1s ease infinite;
 }
 
 .flipCard:hover .flipCardInner {
     transform: rotateY(180deg);
+    cursor: pointer;
   }
-
-// #filterButtons {
-//     display: grid;
-//     width: 60vw;
-//     max-width: 400px; 
-//     grid-template-rows: auto auto; 
-//     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-//     grid-column-gap: 20px;
-//     margin: 0 auto 30px;
-//     align-items: center;
-//     align-content: center;
-//     justify-content: center;
-
-
-//     .filterSkillButton {
-//         display: inline-block;
-//         padding: 15px 5px;
-//         font-size: 15px;
-//         font-weight: bold;
-//         background: $white;
-//         color: $green;
-//         margin-bottom: 10px;
-//         border-radius: 5%;
-//     }
-
-//     .filterSkillButton:hover {
-//         cursor: pointer;
-//     }
-
-//     .filterSkillButton:focus {
-//         background: $green;
-//         color: $white;
-//     }
-// }
 
 @-webkit-keyframes Gradient {
 	0% {
@@ -210,45 +189,48 @@ i.fas.fa-arrow-down {
   }
 }
 
-@keyframes point-down
+@keyframes pulse
 {
   0% {
-    top: -300px;
+    color: black;
   }
   100% {
-    top: -100px;
+    color: rgb(255, 0, 132);
   }
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
 
-    #aboutText {
-        text-align: left;
-    }
+    #about {
+        background: linear-gradient(90deg, white 50%, #E73C7E 50%);
+        color: white;
 
-    #profilePhoto {
-        max-width: 300px;
-        margin: auto auto;
-    }
-
-    .aboutGrid {
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 30px;
-
-        .aboutColumns {
-
-            .cardRow {
-                width: 40vw;
+        #aboutText {
+            text-align: left;
+        }
+    
+        #profilePhoto {
+            max-width: 200px;
+            margin: auto auto;
+        }
+    
+        .aboutGrid {
+            grid-template-columns: 50% 50%;
+            grid-column-gap: auto;
+    
+            .aboutColumns {
+    
+                // .cardRow {
+                //     width: 50vw;
+                // }
+            }
+    
+            .aboutMeColumns {
+                grid-template-columns: auto auto;
+                // grid-column-gap: 20px;
+                align-items: center; 
             }
         }
-
-        .aboutMeColumns {
-            grid-template-columns: auto auto;
-            grid-column-gap: 30px;
-            align-items: center; 
-        }
-
     }
-
 }

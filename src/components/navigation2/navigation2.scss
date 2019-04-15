@@ -6,20 +6,21 @@
     z-index: 1;
     text-align: right;
     width: 40px;
-    border-right: 2px solid rgb(72, 72, 72);
+    // border-right: 2px solid rgb(72, 72, 72);
 
     .collapsibleNav {
         position: relative; 
         top: 50vh;
         left: 21px;
 
-        i.fas.fa-bars {
+        i.fas {
             display: block;
+            // width: 20px;
             color: rgb(72, 72, 72);
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
-        i.fas.fa-bars:hover {
+        i.fas:hover {
             cursor: pointer;
         }
     }
@@ -30,24 +31,26 @@
     min-height: 110vh; 
     position: fixed; 
     top: 0;
-    z-index: 1;
+    z-index: 100;
     text-align: right;
     animation: shut 1s ease;
     width: 40px;
-    border-right: 2px solid rgb(72, 72, 72);
+    // border-right: 2px solid rgb(72, 72, 72);
 
     .collapsibleNav {
         position: relative; 
         top: 50vh;
         left: 21px;
+        animation: slight-left 1s ease forwards;
 
-        i.fas.fa-bars {
+        i.fas {
             display: block;
+            width: 20px;
             color: rgb(72, 72, 72);
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
-        i.fas.fa-bars:hover {
+        i.fas:hover {
             cursor: pointer;
         }
     }
@@ -56,27 +59,30 @@
 .openNav {
     background-color: rgb(255, 255, 255);
     min-height: 110vh; 
-    width: 30vw;
+    width: 70vw;
     position: fixed; 
     top: 0;
     z-index: 1;
     text-align: right;
     animation: open 1s ease;
-    border-right: 2px solid rgb(72, 72, 72);
+    // border-right: 2px solid rgb(72, 72, 72);
     
 
     .collapsibleNav {
         position: relative; 
         top: 50vh;
-        left: 21px;
+        left: 10px;
+        animation: slight-right 1s ease forwards;
 
-        i.fas.fa-bars {
+        i.fas {
             display: block;
+            width: 20px;
             color: rgb(72, 72, 72);
-            font-size: 2em;
+            font-size: 1.5em;
+            
         }
 
-        i.fas.fa-bars:hover {
+        i.fas:hover {
             cursor: pointer;
         }
     }
@@ -84,29 +90,31 @@
     #navLinks {
         display: grid; 
         grid-template-columns: auto;
-        grid-row-gap: auto;
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
         text-align: center;
         color: rgb(72, 72, 72);
-        font-size: 2.5vw;
         animation: fade-in 2s ease;
         position: relative; 
-        top: 15vh;
-        margin-bottom: 20px;
+        top: 5vh;
+
         i, .links, a {
             color: rgb(72, 72, 72);
-            font-size: 2.5vw;
-            margin-bottom: 20px;
+            font-size: 4vw;
+            margin-bottom: 75px;
+            line-height: 30px;
+        }
+
+        i.fab, i.far {
+            margin: 0 5%;
+            margin-bottom: 50px;
+            font-size: 8vw;
         }
 
         .active {
-            color: rgb(186, 35, 210);
+            color: #E73C7E;
         }
 
         small {
-            font-size: .75vw;
+            font-size: 2vw;
         }
     }
 
@@ -120,14 +128,14 @@
   
     to {
       margin-right: 0;
-      width: 30vw;
+      width: 70vw;
     }
   }
 
   @keyframes shut {
     from {
       margin-right: 100%;
-      width: 30vw; 
+      width: 70vw; 
     }
   
     to {
@@ -146,3 +154,50 @@
     }
   }
 
+  @keyframes slight-right {
+      from {
+          opacity: 0;
+          left: 10px;
+      }
+      to {
+          opacity: 1;
+          left: 80px;
+      }
+  }
+
+  @keyframes slight-left {
+    from {
+        opacity: 0;
+        left: 80px;
+    }
+    to {
+        opacity: 1;
+        left: 21px;
+    }
+}
+
+  @media screen and (min-width: 900px) {
+      .openNav {
+    #navLinks {
+        i, .links, a {
+            font-size: 2vw;
+            margin-bottom: 75px;
+            line-height: 50px;
+        }
+
+        i.fab, i.far {
+            margin: 0 5%;
+            margin-bottom: 50px;
+            font-size: 4vw;
+        }
+
+        .active {
+            color: #E73C7E;
+        }
+
+        small {
+            font-size: .75vw;
+        }
+    }
+}
+  }

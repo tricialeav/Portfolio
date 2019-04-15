@@ -17,10 +17,6 @@ export default class Landing extends Component {
     this.increaseSize = this.increaseSize.bind(this);
   }
 
-  // componentDidMount() {
-  //   document.body.classList.add("background-colors");
-  // }
-
   increaseSize = () => {
     this.setState ({
       increaseSize: true
@@ -37,7 +33,7 @@ export default class Landing extends Component {
     return (
       <div className="landing">
         <h1 className='landingText'>Hi, I'm Tricia</h1>
-        <h1 className='landingText'>and I'm a Full-Stack Web Developer</h1>
+        <h1 className='landingText'>and I'm a Web Developer</h1>
         <div id='buttonDiv'>
           <Link
             activeClass="active"

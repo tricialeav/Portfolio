@@ -7,47 +7,51 @@
 // }
 
 .portfolio {
-	display: block;
-	height: 90vh;
+	min-height: 90vh;
 	width: 90vw;
-	margin: auto auto;
-	background-size: 200% 200%;
+    background: rgb(0, 189, 193);
+    color: white; 
+    margin: auto auto;
+	top: 100px;
+	position: relative;
 	
 	#portfolioContainer {
 		min-height: 100vh;
 		margin-bottom: -100px;
-		// max-width: 2000px;
-		// margin-top: 100px;
-		// margin-left: auto; 
-		// margin-right: auto;
-		
+
 		h1 {
-			// transform: rotate(90deg);
-			// transform-origin: left top 0;
+			font-family: 'Permanent Marker', cursive;
+			text-align: center;
+			padding: 20px 0;
 		}
 		
 		#portfolioList {
 			list-style-type: none;
 			display: grid; 
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
 			grid-column-gap: 10px;
-			width: 90vw;
+			width: 80vw;
 			max-width: 2000px;
-			margin:  0 auto 100px;
+			margin:  0 auto 50px;
 			padding: 40px 0 0 0;
 			align-items: center; 
 			justify-items: center; 
 
 			.portfolioCard {
-				margin: 30px auto;
+				margin: 0 auto;
         		max-width: 1000px;
 				background: white; 
 				color: rgb(60, 60, 60);
 				margin-bottom: 20px;
-				height: 290px;
-				width: 290px;
+				height: 240px;
+				width: 240px;
 				box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);	
 				border-radius: 20px;
+
+				a {
+					text-decoration: none;
+					color: rgb(60, 60, 60);
+				}
 			}
 
 			.portfolioCard:hover {
@@ -55,8 +59,8 @@
 			}
 
 			.portfolioGraphics {
-				width: 270px;
-				height: 170px;
+				width: 220px;
+				height: 130px;
 				display: block;
 				margin: 0 auto;
 				padding: 10px;

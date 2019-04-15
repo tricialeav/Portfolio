@@ -7,7 +7,7 @@ import Landing from './views/Landing/Landing';
 import About from './views/About/About';
 import Portfolio from './components/portfolio/portfolio';
 // import Contact from './components/contact/contact';
-import Footer from './components/footer/footer';
+// import Footer from './components/footer/footer';
 
 
 // TODO enable scrolling animation
@@ -21,7 +21,7 @@ class App extends Component {
         <Landing />
         <About />
         <Portfolio />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
