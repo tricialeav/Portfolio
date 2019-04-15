@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
 import './portfolio.scss'
 import microphone from '../../media/microphone.jpg'
 import comingSoon from '../../media/coming_soon.jpg'
@@ -13,8 +14,9 @@ export default class Portfolio extends Component {
         return (
             <div className="portfolio">
                 <div id='portfolioContainer'>
-                <h1>My Work</h1>
+                    <h1>My Work</h1>
                     <ul id='portfolioList'>
+                    <Link to='/uci'>
                         <li className='portfolioCard'>
                             <img src={microphone} alt='Microphone on stand' className='portfolioGraphics'></img>
                             <div className='portfolioText'>
@@ -23,7 +25,7 @@ export default class Portfolio extends Component {
                                 <p>April 2019</p>
                             </div>
                         </li>
-                        
+                        </Link>
                         <li className='portfolioCard'>
                             <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
                             <div className='portfolioText'>
@@ -58,11 +60,11 @@ export default class Portfolio extends Component {
                         </li>
                         <li className='portfolioCard'>
                             <a href='https://agile-springs-18554.herokuapp.com/' target='_blank'><img src={game} alt='Screenshot of Crystal Collector Game with dragon character' className='portfolioGraphics'></img>
-                            <div className='portfolioText'>
-                                <h4>UCI Final Project</h4>
-                                <p>School Project</p>
-                                <p>Spring 2018</p>
-                            </div>
+                                <div className='portfolioText'>
+                                    <h4>UCI Final Project</h4>
+                                    <p>School Project</p>
+                                    <p>Spring 2018</p>
+                                </div>
                             </a>
                         </li>
                     </ul>

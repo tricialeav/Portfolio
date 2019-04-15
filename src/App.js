@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
-// import * as Scroll from 'react-scroll';
+import { BrowserRouter as Router, Route, Redirect, Switch, withRouter } from "react-router-dom";
 import './App.scss';
-import Navigation2 from './components/navigation2/navigation2'
-import Landing from './views/Landing/Landing';
-import About from './views/About/About';
-import Portfolio from './views/portfolio/portfolio';
-// import Contact from './components/contact/contact';
-// import Footer from './components/footer/footer';
-
+import Home from './views/Home/Home';
+import UCI from './components/uciSpeakingEvent/uciSpeakingEvent';
 
 // TODO enable scrolling animation
 
@@ -16,11 +10,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Navigation2 />
-        <Landing />
-        <About />
-        <Portfolio />
-        {/* <Footer /> */}
+        <Router>
+          <Switch>
+            <Route exact path='/' component={withRouter(Home)} />
+            <Route path="/uci" component={withRouter(UCI)} />
+          </Switch>
+        </Router>
       </div>
     );
   }
