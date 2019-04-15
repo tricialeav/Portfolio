@@ -8,40 +8,6 @@ import game from '../../media/game.png'
 
 
 export default class Portfolio extends Component {
-    // constructor(props) {
-    //     super(props); 
-
-    //     this.state =  {
-    //         hovered: false,
-    //         activeCard: ''
-    //     }
-
-        // this.blurOthers = this.blurOthers.bind(this)
-        // this.resetBlur = this.resetBlur.bind(this)
-    // }
-
-    // componentDidMount() {
-    //     document.body.classList.add("blues");
-    // }
-    // componentWillUnmount() {
-    //     document.body.classList.remove("blues");
-    // }
-
-    // blurOthers = (e) => {
-    //     console.log(e.target.value)
-    //     this.setState ({
-    //         activeCard: e.target.value,
-    //         hovered: !this.state.hovered
-    //     })
-    // }
-
-    // resetBlur = (id) => {
-    //     console.log(id)
-    //     this.setState ({
-    //         activeCard: '',
-    //         hovered: !this.state.hovered
-    //     })
-    // }
 
     render() {
         return (
@@ -51,7 +17,6 @@ export default class Portfolio extends Component {
                     <ul id='portfolioList'>
                         <li className='portfolioCard'>
                             <img src={microphone} alt='Microphone on stand' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>UCI Open House</h4>
                                 <p>Speaking Event</p>
@@ -61,7 +26,6 @@ export default class Portfolio extends Component {
                         
                         <li className='portfolioCard'>
                             <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>Symptom Tracker App</h4>
                                 <p>Personal Project</p>
@@ -70,7 +34,6 @@ export default class Portfolio extends Component {
                         </li>
                         <li className='portfolioCard'>
                             <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>Whiteboard Warriors Website</h4>
                                 <p>Personal Project</p>
@@ -79,7 +42,6 @@ export default class Portfolio extends Component {
                         </li>
                         <li className='portfolioCard'>
                             <img src={code1} alt='Code editor on computer screen' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>Subscriber Data Project</h4>
                                 <p>Professional Work</p>
@@ -88,7 +50,6 @@ export default class Portfolio extends Component {
                         </li>
                         <li className='portfolioCard'>
                             <img src={code2} alt='Code editor on computer screen' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>User Portal Project</h4>
                                 <p>Professional Work</p>
@@ -97,7 +58,6 @@ export default class Portfolio extends Component {
                         </li>
                         <li className='portfolioCard'>
                             <a href='https://agile-springs-18554.herokuapp.com/' target='_blank'><img src={game} alt='Screenshot of Crystal Collector Game with dragon character' className='portfolioGraphics'></img>
-                            <span></span>
                             <div className='portfolioText'>
                                 <h4>UCI Final Project</h4>
                                 <p>School Project</p>

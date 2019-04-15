@@ -83,6 +83,8 @@
     #navLinks {
         display: grid; 
         grid-template-columns: auto;
+        width: 50%;
+        margin: 0 auto;
         text-align: center;
         color: rgb(72, 72, 72);
         animation: fade-in 2s ease;
@@ -91,7 +93,7 @@
 
         i, .links, a {
             color: rgb(72, 72, 72);
-            font-size: 30px;
+            font-size: 25px;
             margin-bottom: 75px;
             line-height: 50px;
         }
@@ -100,6 +102,7 @@
             margin: 0 5%;
             margin-bottom: 50px;
             font-size: 30px;
+            width: 20px;
         }
 
         .active {
@@ -185,14 +188,17 @@
 
         #navLinks {
             i, .links, a {
-                margin-bottom: 75px;
+                margin: 0 auto 75px;
                 line-height: 50px;
+                width: 50%;
             }
 
             i.fab, i.far {
                 margin: 0 5%;
                 margin-bottom: 50px;
                 font-size: 3.5vw;
+                position: relative; 
+                z-index: 100;
             }
 
             .active {

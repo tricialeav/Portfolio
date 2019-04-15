@@ -14,7 +14,7 @@ $green: rgb(11, 121, 73);
     display: grid;
     align-content: center;
     width: 80vw;
-    max-width: 2000px;
+    max-width: 2100px;
     margin-top: 100px; 
     margin-bottom: 40px;
     margin-left: auto; 
@@ -37,6 +37,12 @@ $green: rgb(11, 121, 73);
             padding: 20px;
             margin: 20px auto;
 
+            #profileHeader {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-column-gap: 10px;
+            }
+
             #aboutText {
                 color: rgb(0, 0, 0);
                 padding: 20px;
@@ -50,14 +56,14 @@ $green: rgb(11, 121, 73);
             #headline {
                 color: #E73C7E; 
                 font-weight: bold;
-                font-size: 2vw;
+                font-size: 3.2vw;
                 text-align: center; 
                 font-family: 'Permanent Marker', cursive;
             }
 
             #profilePhoto {
                 display: block;
-                max-width: 300px;
+                max-width: 150px;
                 margin: 10px auto;
                 border-radius: 50%;
                 border: 2px solid rgb(13, 255, 239);
@@ -67,19 +73,17 @@ $green: rgb(11, 121, 73);
 
         .cardRow {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             grid-row-gap: 20px;
             grid-column-gap: 10px;
-            width: 80vw;
-            max-width: 450px;
+            width: 35vw;
             text-align: center;
             margin: auto;
         
             .flipCard {
-                background-color: transparent;
                 perspective: 1000px;
-                width: 100px; 
-                height: 100px;
+                width: 85px; 
+                height: 75px;
                 margin-bottom: 10px;
                 
             
@@ -94,7 +98,7 @@ $green: rgb(11, 121, 73);
                     .flipCardFront, .flipCardBack {
                         backface-visibility: hidden;
                         display: block;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         padding-top: 20px;
                         position: absolute;
                         border: 2px solid $white;
@@ -105,7 +109,12 @@ $green: rgb(11, 121, 73);
                     }
 
                     .flipCardFront {
-                        background-color: transparent; 
+                        background-color: #E73C7E; 
+                        color: white;
+
+                        h5 {
+                            margin: 5px auto 10px;
+                        }
 
                         .icon {
                             font-size: 2rem;
@@ -219,6 +228,7 @@ i.fas.fa-arrow-down {
 
         #aboutText {
             text-align: left;
+            font-size: 1vw;
         }
     
         #profilePhoto {
@@ -233,6 +243,14 @@ i.fas.fa-arrow-down {
             .aboutMeColumns {
                 grid-template-columns: auto auto;
                 align-items: center; 
+
+                #headline {
+                    color: #E73C7E; 
+                    font-weight: bold;
+                    font-size: 2vw;
+                    text-align: center; 
+                    font-family: 'Permanent Marker', cursive;
+                }
             }
         }
     }
@@ -240,7 +258,7 @@ i.fas.fa-arrow-down {
     .vertical {
         transform: rotate(-90deg);
         vertical-align: middle;
-        top: -100px;
+        top: -130px;
         position: relative;
         left: -19px;
         color: black;
@@ -252,7 +270,7 @@ i.fas.fa-arrow-down {
         position: relative;
         right: 10px;
         font-size: 27px;
-        top: -80px;
+        top: -100px;
         display: block;
         animation: bounce 800ms cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
     }

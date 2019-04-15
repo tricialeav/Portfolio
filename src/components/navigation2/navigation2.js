@@ -20,6 +20,7 @@ export default class Navigation2 extends Component {
 
     toggleNav = (e) => {
         e.preventDefault();
+        console.log('click')
         if (this.state.navType === 'nav' || this.state.navType === 'closeNav') {
             this.setState({
                 navType: 'openNav', 
