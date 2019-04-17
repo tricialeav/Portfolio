@@ -28,7 +28,7 @@ export default class Portfolio extends Component {
                                 </div>
                             </li>
                         </Link>
-                        <Link to='/uci'>
+                        {/* <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -37,8 +37,8 @@ export default class Portfolio extends Component {
                                     <p>In Development - Spring 2019</p>
                                 </div>
                             </li>
-                        </Link>
-                        <Link to='/uci'>
+                        {/* </Link>
+                        <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -47,8 +47,8 @@ export default class Portfolio extends Component {
                                     <p>In Development - Spring 2019</p>
                                 </div>
                             </li>
-                        </Link>
-                        <Link to='/uci'>
+                        {/* </Link>
+                        <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={code1} alt='Code editor on computer screen' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -57,8 +57,8 @@ export default class Portfolio extends Component {
                                     <p>Fall 2018</p>
                                 </div>
                             </li>
-                        </Link>
-                        <Link to='/uci'>
+                        {/* </Link>
+                        <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={code2} alt='Code editor on computer screen' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -67,8 +67,8 @@ export default class Portfolio extends Component {
                                     <p>Winter 2018</p>
                                 </div>
                             </li>
-                        </Link>
-                        <Link to='/uci'>
+                        {/* </Link>
+                        <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={magazine} alt='person reading magazine' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -77,8 +77,8 @@ export default class Portfolio extends Component {
                                     <p>Winter 2018</p>
                                 </div>
                             </li>
-                        </Link>
-                        <Link to='/uci'>
+                        {/* </Link>
+                        <Link to='/uci'> */}
                             <li className='portfolioCard'>
                                 <img src={game} alt='Screenshot of Crystal Collector Game with dragon character' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -87,7 +87,7 @@ export default class Portfolio extends Component {
                                     <p>Spring 2018</p>
                                 </div>
                             </li>
-                        </Link>
+                        {/* </Link> */}
                     </ul>
                 </div>
             </div >

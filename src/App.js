@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
+import { HashRouter as Router, Route, withRouter } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import './App.scss';
 import Home from './views/Home/Home';
 import UCI from './views/uciSpeakingEvent/uciSpeakingEvent';
 
-// TODO enable scrolling animation
+// TODO enable scrolling animation. Change to BrowserRouter once hosted.
 
 class App extends Component {
   render() {
