@@ -9,9 +9,9 @@ export default class Home extends Component {
     return (
       <div className="Home">
       <Navigation2 />
-        <Landing />
-        <About />
-        <Portfolio />
+        <Landing id='landing'/>
+        <About id='about'/>
+        <Portfolio id='portfolio'/>
       </div>
     );
   }
