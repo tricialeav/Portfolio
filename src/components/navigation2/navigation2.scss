@@ -92,6 +92,10 @@
         position: relative; 
         top: 5vh;
 
+        a:hover {
+            cursor: pointer;
+        }
+
         i, .links, a {
             color: rgb(72, 72, 72);
             font-size: 25px;
