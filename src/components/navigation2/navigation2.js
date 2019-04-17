@@ -69,14 +69,14 @@ export default class Navigation2 extends Component {
                                     offset={-30}
                                     duration={700}
                                     onClick={e => this.toggleNav(e)}>Portfolio</Link>
-                                <Link
+                                {/* <Link
                                     activeClass="active"
                                     to="photography"
                                     spy={true}
                                     smooth={true}
                                     offset={-30}
                                     duration={700}
-                                    onClick={e => this.toggleNav(e)}>Photography</Link>
+                                    onClick={e => this.toggleNav(e)}>Photography</Link> */}
 
 
                                 <div>
