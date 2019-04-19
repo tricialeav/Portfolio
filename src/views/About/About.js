@@ -100,7 +100,7 @@ export default class About extends Component {
                             {skills.map(({ skill }) =>
                                 (
                                     <ul>
-                                        <li>{skill}</li>
+                                        <li key={skill}>{skill}</li>
                                     </ul>
                                 )
                             )}

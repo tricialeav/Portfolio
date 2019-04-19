@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import './uciSpeakingEvent.scss';
 import { withRouter } from 'react-router'
-import { Link } from "react-router-dom";
 import microphone from '../../media/microphone.jpg'
 
 // TODO add 'other work' section
 
 class uciSpeakingEvent extends Component {
   constructor(props) {
-    super(props); 
+    super(props);
 
     this.handleBack = this.handleBack.bind(this)
 
@@ -18,9 +17,13 @@ class uciSpeakingEvent extends Component {
 
   }
 
+  componentDidMount() {
+      window.scrollTo(0, 0);
+  }
+
   handleBack = (e) => {
     e.preventDefault();
-    this.setState ({
+    this.setState({
       animation: 'fade-out 1s ease 1'
     })
     window.history.back(-1);
@@ -30,9 +33,9 @@ class uciSpeakingEvent extends Component {
     return (
       <div className="uciSpeakingEvent">
         <div className='backToHome'>
-        <i class="far fa-times-circle" type="button" onClick={e => this.handleBack(e)}></i>
+          <i class="far fa-times-circle" type="button" onClick={e => this.handleBack(e)}></i>
         </div>
-        <div className='project' style={{animation: this.state.animation}}>
+        <div className='project' style={{ animation: this.state.animation }}>
           <div className='projectDescription'>
             <h1>UCI Open House Event</h1>
             <hr />
