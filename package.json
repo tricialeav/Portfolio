@@ -2,7 +2,7 @@
   "name": "portfolio_2019",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://tricialeav.github.io/portfolio_2019",
+  "homepage" : "http://tricialeav.github.io/Portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './About.scss';
 import { Link } from "react-scroll";
 import { skills } from '../../data/skills.js'
-import placeholder from '../../media/placeholder.jpg'
+import profilePhoto from '../../media/profilePhoto.jpg'
 
 export default class About extends Component {
     constructor(props) {
@@ -54,7 +54,7 @@ export default class About extends Component {
                     <div className='aboutColumns' id='aboutMe'>
                         <div className='aboutMeColumns'>
                             <div id='profileHeader'>
-                                <img src={placeholder} alt='placeholder' id='profilePhoto' />
+                                <img src={profilePhoto} alt='Tricia Leavitt' id='profilePhoto' />
                                 <p id='headline'>I'm a Full Stack Web Developer located in Newport Beach, CA and I'm passionate about front-end development.</p>
 
                             </div>
