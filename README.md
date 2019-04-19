@@ -21,7 +21,10 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 # Acknowledgments
 https://www.w3schools.com/howto/howto_css_flip_card.asp
+
 https://codepen.io/P1N2O/pen/pyBNzX
+
 https://codepen.io/Tipue/pen/pOWLPy
+
 https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
 
