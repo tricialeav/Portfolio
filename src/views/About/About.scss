@@ -50,12 +50,12 @@ $green: rgb(11, 121, 73);
                 
 
                 .inlineLinks {
-                    color: rgb(240, 2, 93);
+                    color: rgb(199, 0, 76);
                 }
             }   
             
             #headline {
-                color: rgb(240, 2, 93); 
+                color: rgb(199, 0, 76); 
                 font-weight: bold;
                 font-size: 3.2vw;
                 text-align: center; 
@@ -212,7 +212,7 @@ i.fas.fa-arrow-down {
     color: black;
   }
   100% {
-    color: rgb(240, 2, 93);
+    color: rgb(199, 0, 76);
   }
 }
 
@@ -246,7 +246,7 @@ i.fas.fa-arrow-down {
 @media screen and (min-width: 1200px) {
 
     #about {
-        background: linear-gradient(90deg, white 50%, rgb(240, 2, 93) 50%);
+        background: linear-gradient(90deg, white 50%, rgb(199, 0, 76) 50%);
         color: white;
 
         #aboutText {
