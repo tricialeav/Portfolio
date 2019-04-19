@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './uciSpeakingEvent.scss';
+import './userPortal.scss';
 import { withRouter } from 'react-router'
-import microphone from '../../media/microphone.jpg'
+import code2 from '../../media/code2.jpg'
 
 // TODO add 'other work' section
 // TODO restore scroll on home page on exit
 
-class uciSpeakingEvent extends Component {
+class userPortal extends Component {
   constructor(props) {
     super(props);
 
@@ -32,22 +32,22 @@ class uciSpeakingEvent extends Component {
 
   render() {
     return (
-      <div className="uciSpeakingEvent">
+      <div className="userPortal">
         <div className='backToHome'>
           <i class="far fa-times-circle" type="button" onClick={e => this.handleBack(e)}></i>
         </div>
         <div className='project' style={{ animation: this.state.animation }}>
           <div className='projectDescription'>
-            <h1>UCI Open House Event</h1>
+            <h1>User Portal Project</h1>
             <hr />
             <div className='projectSubheading'>
-              <h2 className='subheadingLeft'>UCI Division of Continuing Education</h2>
-              <h2 className='subheadingRight'>April 2019</h2>
+              <h2 className='subheadingLeft'>Professional Project</h2>
+              <h2 className='subheadingRight'>Fall 2018</h2>
             </div>
-            <p>As a former UCI bootcamp student, I was invited to speak with prospective attendees about my experience during the Full Stack Development program, which I attended in the Spring of 2018. In addition to presenting my insights and sharing examples of my classwork, I participated in QA sessions regarding the Full Stack Web Development program.</p>
+            <p>Led front-end development and worked with stakeholders to determine project requirements and scope. Revised and updated project code, including: API requests and data ingestion (php), database management (mySQL), and front-end development (Vue.js). Created Admin Portal pages and API functionality to access user records. Provided QA up to and following the release of the product. Enhanced site security protocols and verified data integrity.</p>
           </div>
           <div className='projectPhoto'>
-            <img src={microphone} alt='Microphone on stand' className='portfolioGraphics'></img>
+            <img src={code2} alt='Laptop with code editor on screen' className='portfolioGraphics'></img>
           </div>
         </div>
       </div>
@@ -55,4 +55,4 @@ class uciSpeakingEvent extends Component {
   }
 }
 
-export default withRouter(uciSpeakingEvent);
+export default withRouter(userPortal);

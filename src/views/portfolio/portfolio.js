@@ -47,8 +47,8 @@ export default class Portfolio extends Component {
                                     <p>In Development - Spring 2019</p>
                                 </div>
                             </div>
-                        {/* </Link>
-                        <Link to='/uci'> */}
+                        {/* </Link> */}
+                        <Link to='/subscriber-data-project'>
                             <div className='portfolioCard'>
                                 <img src={code1} alt='Code editor on computer screen' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -57,18 +57,18 @@ export default class Portfolio extends Component {
                                     <p>Fall 2018</p>
                                 </div>
                             </div>
-                        {/* </Link>
-                        <Link to='/uci'> */}
+                        </Link>
+                        <Link to='/user-portal'>
                             <div className='portfolioCard'>
-                                <img src={code2} alt='Code editor on computer screen' className='portfolioGraphics'></img>
+                                <img src={code2} alt='Laptop with code editor on screen' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
                                     <h4>User Portal Project</h4>
                                     <p>Professional Work</p>
                                     <p>Winter 2018</p>
                                 </div>
                             </div>
-                        {/* </Link>
-                        <Link to='/uci'> */}
+                        </Link>
+                        {/* <Link to='/uci'> */}
                             <div className='portfolioCard'>
                                 <img src={magazine} alt='person reading magazine' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -77,8 +77,8 @@ export default class Portfolio extends Component {
                                     <p>Winter 2018</p>
                                 </div>
                             </div>
-                        {/* </Link>
-                        <Link to='/uci'> */}
+                        {/* </Link> */}
+                        <Link to='/game'>
                             <div className='portfolioCard'>
                                 <img src={game} alt='Screenshot of Crystal Collector Game with dragon character' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
@@ -87,7 +87,7 @@ export default class Portfolio extends Component {
                                     <p>Spring 2018</p>
                                 </div>
                             </div>
-                        {/* </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div >

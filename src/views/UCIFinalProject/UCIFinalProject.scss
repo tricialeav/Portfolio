@@ -1,4 +1,4 @@
-.uciSpeakingEvent {
+.UCIFinalProject {
     width: 90vw;
     max-width: 2000px;
     height: 90vh;
@@ -46,6 +46,10 @@
                 display: block;
                 margin: 0 auto;
             }
+            
+            img:hover {
+                cursor: pointer;
+            }
         }
     }   
 
@@ -60,7 +64,7 @@
 }
 
 @media screen and (min-width: 1100px) {
-    .uciSpeakingEvent {
+    .UCIFinalProject {
         max-width: 2000px;
         padding-top: 20px;
         

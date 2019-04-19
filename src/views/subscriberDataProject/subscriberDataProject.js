@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './uciSpeakingEvent.scss';
+import './subscriberDataProject.scss';
 import { withRouter } from 'react-router'
-import microphone from '../../media/microphone.jpg'
+import code1 from '../../media/code1.jpg'
 
 // TODO add 'other work' section
 // TODO restore scroll on home page on exit
 
-class uciSpeakingEvent extends Component {
+class subscriberDataProject extends Component {
   constructor(props) {
     super(props);
 
@@ -32,22 +32,22 @@ class uciSpeakingEvent extends Component {
 
   render() {
     return (
-      <div className="uciSpeakingEvent">
+      <div className="subscriberDataProject">
         <div className='backToHome'>
           <i class="far fa-times-circle" type="button" onClick={e => this.handleBack(e)}></i>
         </div>
         <div className='project' style={{ animation: this.state.animation }}>
           <div className='projectDescription'>
-            <h1>UCI Open House Event</h1>
+            <h1>Subscriber Data Project</h1>
             <hr />
             <div className='projectSubheading'>
-              <h2 className='subheadingLeft'>UCI Division of Continuing Education</h2>
-              <h2 className='subheadingRight'>April 2019</h2>
+              <h2 className='subheadingLeft'>Professional Project</h2>
+              <h2 className='subheadingRight'>Winter 2018</h2>
             </div>
-            <p>As a former UCI bootcamp student, I was invited to speak with prospective attendees about my experience during the Full Stack Development program, which I attended in the Spring of 2018. In addition to presenting my insights and sharing examples of my classwork, I participated in QA sessions regarding the Full Stack Web Development program.</p>
+            <p>Worked with client to obtain relevant historical subscription data from various payment providers. Created ETL process for historical data using MySQL and Node.js to transform datasets contained on multiple tables based on client's backend requirements for ingestion. Worked with stakeholders and team members to verify project timelines and requirements.</p>
           </div>
           <div className='projectPhoto'>
-            <img src={microphone} alt='Microphone on stand' className='portfolioGraphics'></img>
+            <img src={code1} alt='Code editor on computer screen' className='portfolioGraphics'></img>
           </div>
         </div>
       </div>
@@ -55,4 +55,4 @@ class uciSpeakingEvent extends Component {
   }
 }
 
-export default withRouter(uciSpeakingEvent);
+export default withRouter(subscriberDataProject);
