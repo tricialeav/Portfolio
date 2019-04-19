@@ -5,7 +5,7 @@
     top: 0;
     z-index: 1;
     text-align: right;
-    width: 40px;
+    width: 20px;
     animation: fade-in 1.5s ease 1;
 
     .collapsibleNav {
@@ -178,41 +178,44 @@
 }
 
   @media screen and (min-width: 900px) {
-    .closeNav {
-    
-        .collapsibleNav {
-            animation: slight-left 1s ease forwards;
+      .nav {
+          width: 40px;
+        .closeNav {
+        
+            .collapsibleNav {
+                animation: slight-left 1s ease forwards;
+            }
+        }
+        
+        .openNav {
+
+            .collapsibleNav {
+                animation: slight-right 1s ease forwards;
+            }
+
+            #navLinks {
+                i, .links, a {
+                    margin: 0 auto 75px;
+                    line-height: 50px;
+                    width: 50%;
+                }
+
+                i.fab, i.far {
+                    margin: 0 5%;
+                    margin-bottom: 50px;
+                    font-size: 3.5vw;
+                    position: relative; 
+                    z-index: 100;
+                }
+
+                .active {
+                    color: #E73C7E;
+                }
+
+                small {
+                    font-size: .75vw;
+                }
+            }
         }
     }
-    
-    .openNav {
-
-        .collapsibleNav {
-            animation: slight-right 1s ease forwards;
-        }
-
-        #navLinks {
-            i, .links, a {
-                margin: 0 auto 75px;
-                line-height: 50px;
-                width: 50%;
-            }
-
-            i.fab, i.far {
-                margin: 0 5%;
-                margin-bottom: 50px;
-                font-size: 3.5vw;
-                position: relative; 
-                z-index: 100;
-            }
-
-            .active {
-                color: #E73C7E;
-            }
-
-            small {
-                font-size: .75vw;
-            }
-        }
 }
-  }

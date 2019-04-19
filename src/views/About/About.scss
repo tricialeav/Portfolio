@@ -1,6 +1,3 @@
-$white: rgb(255, 255, 255);
-$green: rgb(11, 121, 73);
-
 #about {
     min-height: 90vh;
 	width: 80vw;
@@ -8,7 +5,7 @@ $green: rgb(11, 121, 73);
     color: black; 
     margin: auto auto;
     top: 30px;
-    animation: fade-in 1.5s ease 1;
+    // animation: fade-in 1.5s ease 1;
 }
 
 .aboutGrid {
@@ -40,7 +37,7 @@ $green: rgb(11, 121, 73);
 
             #profileHeader {
                 display: grid;
-                grid-template-columns: auto auto;
+                grid-template-columns: auto;
                 grid-column-gap: 10px;
             }
 
@@ -57,7 +54,7 @@ $green: rgb(11, 121, 73);
             #headline {
                 color: rgb(227, 0, 87); 
                 font-weight: bold;
-                font-size: 3.2vw;
+                font-size: 20px;
                 text-align: center; 
                 font-family: 'Permanent Marker', cursive;
             }
@@ -71,74 +68,17 @@ $green: rgb(11, 121, 73);
                 animation: shadow-pulse 1s infinite;
             }
         }
+    }
+    
+    .mobileSkills {
+        text-align: center;
 
-        .cardRow {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            grid-row-gap: 20px;
-            grid-column-gap: 10px;
-            width: 35vw;
-            text-align: center;
-            margin: auto;
-        
-            .flipCard {
-                perspective: 1000px;
-                -moz-perspective: 1000;
-                width: 85px; 
-                height: 75px;
-                margin-bottom: 10px;
-                
-            
-                .flipCardInner {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    transition: transform 0.8s;
-                    -moz-transform: transform 0.8s;
-                    -webkit-transform: transform 0.8s;
-                    -ms-transform: transform 0.8s;
-                    -o-transform: transform 0.8s;
-                    transform-style: preserve-3d;
-                    -moz-transform-style: preserve-3d;
-                    
-                    .flipCardFront, .flipCardBack {
-                        backface-visibility: hidden;
-                        display: block;
-                        font-size: 1rem;
-                        padding-top: 20px;
-                        position: absolute;
-                        border: 2px solid $white;
-                        border-radius: 4px;
-                        width: 100%;
-                        height: 100%; 
-                        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);	
-                    }
-
-                    .flipCardFront {
-                        color: white;
-
-                        h5 {
-                            margin: 5px auto 10px;
-                        }
-
-                        .icon {
-                            font-size: 2rem;
-                        }
-                    }
-                
-                    .flipCardBack {
-                        transform: rotateY(180deg);
-                        -moz-transform: rotateY(180deg);
-                        -webkit-transform: rotateY(180deg);
-                        -ms-transform: transform rotateY(180deg);
-                        -o-transform: transform rotateY(180deg);
-                        background: $white;
-                        color: rgb(60, 60, 60);
-                        align-content: center;
-                    }
-                }
-            }
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+        }
+        ul {
+            list-style-type: none; 
+            padding: 0;
         }
     }
 }
@@ -233,14 +173,14 @@ i.fas.fa-arrow-down {
     }
 }
 
-@keyframes fade-in {
-    0% {
-        opacity: 0; 
-    }
-    100% {
-        opacity: 100%;
-    }
-}
+// @keyframes fade-in {
+//     0% {
+//         opacity: 0; 
+//     }
+//     100% {
+//         opacity: 100%;
+//     }
+// }
 
 
 @media screen and (min-width: 1200px) {
@@ -266,12 +206,86 @@ i.fas.fa-arrow-down {
             .aboutMeColumns {
                 grid-template-columns: auto auto;
                 align-items: center; 
+                #profileHeader {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-column-gap: 10px;
+                }
 
                 #headline {
                     font-weight: bold;
                     font-size: 2vw;
                     text-align: center; 
                     font-family: 'Permanent Marker', cursive;
+                }
+            }
+
+            .cardRow {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                grid-row-gap: 20px;
+                grid-column-gap: 10px;
+                width: 35vw;
+                text-align: center;
+                margin: auto;
+            
+                .flipCard {
+                    perspective: 1000px;
+                    -moz-perspective: 1000;
+                    width: 85px; 
+                    height: 75px;
+                    margin-bottom: 10px;
+                    
+                
+                    .flipCardInner {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        -moz-transform: transform 0.8s;
+                        -webkit-transform: transform 0.8s;
+                        -ms-transform: transform 0.8s;
+                        -o-transform: transform 0.8s;
+                        transform-style: preserve-3d;
+                        -moz-transform-style: preserve-3d;
+                        
+                        .flipCardFront, .flipCardBack {
+                            backface-visibility: hidden;
+                            display: block;
+                            font-size: 1rem;
+                            padding-top: 20px;
+                            position: absolute;
+                            border: 2px solid white;
+                            border-radius: 4px;
+                            width: 100%;
+                            height: 100%; 
+                            box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);	
+                        }
+    
+                        .flipCardFront {
+                            color: white;
+    
+                            h5 {
+                                margin: 5px auto 10px;
+                            }
+    
+                            .icon {
+                                font-size: 2rem;
+                            }
+                        }
+                    
+                        .flipCardBack {
+                            transform: rotateY(180deg);
+                            -moz-transform: rotateY(180deg);
+                            -webkit-transform: rotateY(180deg);
+                            -ms-transform: transform rotateY(180deg);
+                            -o-transform: transform rotateY(180deg);
+                            background: white;
+                            color: rgb(60, 60, 60);
+                            align-content: center;
+                        }
+                    }
                 }
             }
         }
