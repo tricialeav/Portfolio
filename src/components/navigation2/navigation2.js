@@ -80,10 +80,10 @@ export default class Navigation2 extends Component {
 
 
                                 <div>
-                                    <a href='https://www.linkedin.com/in/tricia-leavitt/' target='_blank'><i className="fab fa-linkedin"></i></a>
-                                    <a href='https://github.com/tricialeav' target='_blank'><i className="fab fa-github-square"></i></a>
-                                    <a href='https://www.instagram.com/tricialeav/' target='_blank'><i className="fab fa-instagram"></i></a>
-                                    <a href="mailto:tricialeavittdevelopment@gmail.com?subject=Website Inquiry"><i className="far fa-envelope"></i></a>
+                                    <a href='https://www.linkedin.com/in/tricia-leavitt/' target='_blank' rel="noopener"><i className="fab fa-linkedin"></i></a>
+                                    <a href='https://github.com/tricialeav' target='_blank'><i className="fab fa-github-square" rel="noopener"></i></a>
+                                    <a href='https://www.instagram.com/tricialeav/' target='_blank'><i className="fab fa-instagram" rel="noopener"></i></a>
+                                    <a href="mailto:tricialeavittdevelopment@gmail.com?subject=Website Inquiry" rel="noopener"><i className="far fa-envelope"></i></a>
                                 </div>
                                 <small>&copy;Tricia Leavitt 2019</small>
                             </div>

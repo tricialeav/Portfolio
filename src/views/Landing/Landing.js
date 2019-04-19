@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 import './Landing.scss';
-// import About from '../About/About'
 
 export default class Landing extends Component {
   scrollToTop = () => {
