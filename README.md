@@ -1,26 +1,27 @@
 # Portfolio for Tricia Leavitt, Web Developer
 Professional Portfolio
 
-#Getting Started
+# Getting Started
 Git clone the repo and run yarn install
 
-#Prerequisites
+# Prerequisites
 Node, NPM
 
-#Built With
+# Built With
 React.js
 Yarn
 React Router
 React Scroll
 
-#Authors
+# Authors
 Tricia Leavitt
 
-#License
+# License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-#Acknowledgments
+# Acknowledgments
 https://www.w3schools.com/howto/howto_css_flip_card.asp
 https://codepen.io/P1N2O/pen/pyBNzX
 https://codepen.io/Tipue/pen/pOWLPy
 https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
+
