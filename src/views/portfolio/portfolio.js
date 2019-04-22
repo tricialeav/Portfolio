@@ -29,14 +29,14 @@ export default class Portfolio extends Component {
                             </div>
                         </Link>
                         {/* <Link to='/uci'> */}
-                            <div className='portfolioCard'>
+                            {/* <div className='portfolioCard'>
                                 <img src={comingSoon} alt='Coming soon placeholder' className='portfolioGraphics'></img>
                                 <div className='portfolioText'>
                                     <h4>Symptom Tracker App</h4>
                                     <p>Personal Project</p>
                                     <p>In Development - Spring 2019</p>
                                 </div>
-                            </div>
+                            </div> */}
                         {/* </Link>
                         <Link to='/uci'> */}
                             <div className='portfolioCard'>
